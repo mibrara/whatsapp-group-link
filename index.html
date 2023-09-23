@@ -1,13 +1,35 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" id="xvstyles" href="https://static-cdn77.xvideos-cdn.com/v-50d555c338d/v3/css/default/main.css">
-
-</head>
-<body>
-	<h1>hello world</h1>
+   <head>
+      <title>Yamyhub Player</title>       
+<style>
+    html,body{
+         margin:0;padding:0;width:100%;height:100%;overflow: hidden;
+      }
+</style>
+<meta name='robots' content='noindex'>
+   </head>
+   <body>
+<iframe style="width:100%;height:100%;" id="myiframe" sandbox="allow-same-origin allow-scripts" allowfullscreen></iframe>
 </body>
+<script>
+  var iframe = document.getElementById("myiframe");
+  const url = " https://www-proxy.danihub.com/requests";
+const formData = new FormData();
+
+formData.append("url", "xvideos.com");
+
+fetch(url, {
+  method: "POST",
+  body: formData
+})
+  .then(response => {
+    console.log(response);
+  })    
+  .catch(error => {
+    console.error("Error:", error);
+  });
+        // iframe.src = "https://p2.stealthsurfer.online/?__cpo=aHR0cHM6Ly93d3cueHZpZGVvcy5jb20";
+    // });
+    </script>
 </html>
